@@ -4,7 +4,162 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/vars.css" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/media.css" />
     <title>CV Pavel Chernenko</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <h1 class="header__fullname">Pavel Chernenko</h1>
+      <h2 class="header__specialization">Frontend Developer</h2>
+    </header>
+    <main>
+      <aside class="sidebar-info">
+        <img
+          src="./assets/images/avatar.jpg"
+          class="sidebar-info__avatar"
+          alt="my avatar"
+        />
+        <div>
+          <h4 class="sidebar-info__title">Skills</h4>
+          <ul class="sidebar-info__list">
+            <li class="sidebar-info__list-item">HTML, PUG, CSS, SCSS</li>
+            <li class="sidebar-info__list-item">Bootstrap, MUI</li>
+            <li class="sidebar-info__list-item">JavaScript, TypeScript</li>
+            <li class="sidebar-info__list-item">Node.js, Express</li>
+            <li class="sidebar-info__list-item">REST API</li>
+            <li class="sidebar-info__list-item">Vue 2, Vuex, Vue-router</li>
+            <li class="sidebar-info__list-item">
+              React, Redux-Toolkit, React-router
+            </li>
+            <li class="sidebar-info__list-item">Git, GitHub</li>
+            <li class="sidebar-info__list-item">Figma, Photoshop</li>
+          </ul>
+          <h4 class="sidebar-info__title">Education</h4>
+          <ul class="sidebar-info__list">
+            <li class="sidebar-info__list-item">
+              May 2022 - December 2022 - TeachMeSkills Frontend Developer.
+            </li>
+            <li class="sidebar-info__list-item">
+              2014-2020 - Gomel state medical university. Therapist
+            </li>
+          </ul>
+          <h4 class="sidebar-info__title">Languages</h4>
+          <ul class="sidebar-info__list">
+            <li class="sidebar-info__list-item">Russian(Native speaker)</li>
+            <li class="sidebar-info__list-item">English(A2-B1)</li>
+          </ul>
+        </div>
+      </aside>
+      <section class="main-info">
+        <div class="container">
+          <h4 class="main-info__title">About me</h4>
+          <p>
+            I am a doctor , who wanted to join the It world , because it's world
+            so dynamic and i love learn new technologies and see in future. When
+            I started coding, I fell in love with development. I started study
+            Frontend in May 2022 and hard work on my skills in TeachMeSkills.
+            When start Js module i finded freelance work (GTA V RP server) and
+            started study Vue 2, because it was need for project. On this
+            project I received so much expereince and knowledge, this maked my
+            journey in IT world so easier. I also completed an internship at
+            ITransition and familiar with technologies such as node.js, express
+            and began to understand better REST API. Now, I am study
+            backend-stack.
+          </p>
+          <h4 class="main-info__title">Expereince</h4>
+          <ul class="main-info__list">
+            <li class="main-info__list-item list-item">
+              <h6 class="list-item__title">
+                TeachMeSkills(graduate courses) | Frontend developer
+              </h6>
+              <p class="list-item__subtitle">May 2022 - January 2023</p>
+              <p class="list-item__description">
+                Developed app - movie/series search service(analogue the popular
+                service kinopoisk). You may choose popular movie, find any
+                movies, episodes or serials from search(with filter options),
+                see current trends, add movie to favorites(unique for your
+                account).
+              </p>
+              <p class="list-item__description">During the development:</p>
+              <ul>
+                <li>Create app architecture</li>
+                <li>Styled-components used for styling.</li>
+                <li>Create animations with framer-motion</li>
+                <li>Page navigation made with react-router v6</li>
+                <li>Store - redux-toolkit</li>
+                <li>Forms are made with react-hook-form</li>
+                <li>APIs: OmDb, Firebase auth, Firebase store.</li>
+                <li>Requests on rest api made with axios.</li>
+              </ul>
+              <p>
+                You can get acquainted with the project:
+                <a
+                  href="https://pyropetrick.github.io/react-pixema/"
+                  class="list-item__link"
+                  target="_blank"
+                >
+                  Watch
+                </a>
+                /
+                <a
+                  href="https://github.com/pyropetrick/react-pixema"
+                  class="list-item__link"
+                  target="_blank"
+                  >Code</a
+                >
+              </p>
+              <div class="separator"></div>
+            </li>
+            <li class="main-info__list-item list-item">
+              <h6 class="list-item__title">
+                Vavilon RP(freelance project) | Frontend developer
+              </h6>
+              <p class="list-item__subtitle">August 2022 - November 2022</p>
+              <p class="list-item__description">
+                Freelance project to develop a GTA 5 RP server. I created user
+                interfaces, worked with network requests, Vue, Vuex, lifecycle
+                hooks on Vue 2.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__social-links">
+        <a
+          href="https://disk.yandex.ru/i/AIkgVrgwV6zClg"
+          class="footer-link"
+          target="_blank"
+        >
+          CV
+        </a>
+        <a
+          href="https://github.com/pyropetrick"
+          class="footer-link"
+          target="_blank"
+          >GitHub
+        </a>
+        <a
+          href="https://www.linkedin.com/in/pyropetrick/"
+          class="footer-link"
+          target="_blank"
+        >
+          Linkedin
+        </a>
+        <a href="https://t.me/pyropetrick" class="footer-link" target="_blank">
+          Telegram
+        </a>
+      </div>
+    </footer>
+  </body>
 </html>
